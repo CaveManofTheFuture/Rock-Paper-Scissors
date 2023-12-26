@@ -2,10 +2,14 @@
 // defining all of the variables needed to compare user's and computer's outputs
 let userChoice = prompt("Rock? Paper? Scissors");
 userChoice = userChoice.toLowerCase();
-let choices = ["rock", "paper", "scissors"]; 
-let computerChoice = choices[Math.floor(Math.random()*choices.length)];
+// function that gets a random output from the computer
+let computerChoice = getComputerChoice();
+function getComputerChoice(){
+const choices = ["rock", "paper", "scissors"]; 
+return choices[Math.floor(Math.random()*choices.length)];
+}
 // main function of the program
-function getResult(){
+function getResult(userChoice, computerChoice){
  // Comparing user and computer
  // rock case
    if (userChoice == "rock" && computerChoice == "paper"){
@@ -44,9 +48,7 @@ function getResult(){
 }
 
 // calling main function of the program
-getResult();
-
-
+getResult(userChoice, computerChoice);
 
 
 
