@@ -2,8 +2,8 @@
 // defining all of the variables needed to compare user's and computer's outputs
 let userChoice = prompt("Rock? Paper? Scissors");
 userChoice = userChoice.toLowerCase();
-// function that gets a random output from the computer
 let computerChoice = getComputerChoice();
+// function that gets a random output from the computer
 function getComputerChoice(){
 const choices = ["rock", "paper", "scissors"]; 
 return choices[Math.floor(Math.random()*choices.length)];
