@@ -1,11 +1,12 @@
 "use strict";
-
+// defining all of the variables needed to compare user's and computer's outputs
 let userChoice = prompt("Rock? Paper? Scissors");
 userChoice = userChoice.toLowerCase();
 let choices = ["rock", "paper", "scissors"]; 
 let computerChoice = choices[Math.floor(Math.random()*choices.length)];
+// main function of the program
 function getResult(){
- //Comparing user and computer
+ // Comparing user and computer
  // rock case
    if (userChoice == "rock" && computerChoice == "paper"){
   console.log("Your choice was " + userChoice + " and computer's choice was " + computerChoice);
@@ -42,6 +43,7 @@ function getResult(){
  }
 }
 
+// calling main function of the program
 getResult();
 
 
