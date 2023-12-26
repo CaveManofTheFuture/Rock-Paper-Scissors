@@ -10,7 +10,7 @@ function getResult(){
  // rock case
    if (userChoice == "rock" && computerChoice == "paper"){
   console.log("Your choice was " + userChoice + " and computer's choice was " + computerChoice);
-  console.log("You win") 
+  console.log("You lose") 
  } else if (userChoice == "rock" && computerChoice == "scissors"){
   console.log("Your choice was " + userChoice + " and computer's choice was " + computerChoice);
   console.log("You win") 
